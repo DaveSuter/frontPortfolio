@@ -1,0 +1,35 @@
+<div class="card mb-3" >
+    <div class="card-body" >
+      
+
+      <div class="hstack gap-3 margin">
+        <div class="me-auto">
+          <h5 class="card-title">Hard y Soft Skills</h5>
+        </div>
+        <div>
+          <!--BOTON PARA AGREGAR UNO NUEVO-->
+          <app-buttom-add></app-buttom-add>
+        </div>
+      </div>
+
+      <div id="contenedor" *ngFor="let skills of skillList">
+        <div class="progress bg-progres">
+          <div class="progress-bar progress-bar-striped progress-bar-animated color-progres" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+        </div>
+
+        <div class="hstack gap-3">
+          <div class="me-auto">
+            <p class="card-text">{{skills.skillname}}</p>
+          </div>
+          <div>
+            <!--BOTON PARA EDITAR-->
+            <app-buttom-edit></app-buttom-edit>
+          </div>
+          <div>
+            <!--BOTON PARA BORRAR-->
+            <app-buttom-del></app-buttom-del>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

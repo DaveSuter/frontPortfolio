@@ -1,0 +1,36 @@
+<div class="card mb-3">
+    <div class="card-body">
+      <div class="hstack gap-3">
+        <div class="me-auto">
+          <h5 class="card-title">Educación</h5>
+        </div>
+        <div>
+          <!--BOTON PARA AGREGAR UNO NUEVO-->
+          <app-buttom-add></app-buttom-add>
+        </div>
+      </div>
+      
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let educacion of educacionLista">
+          <div class="hstack gap-3">
+            <div class="me-auto">
+              <p class="card-text">{{educacion.titulo}}</p>
+            </div>
+            <div>
+              <!--BOTON PARA EDITAR-->
+              <app-buttom-edit></app-buttom-edit>
+            </div>
+            <div>
+              <!--BOTON PARA BORRAR-->
+              <app-buttom-del></app-buttom-del>
+            </div>
+          </div>
+          
+          <p class="card-text"><small class="text-muted">{{educacion.institucion}}</small></p>
+          <p class="card-text"><small class="text-muted">{{educacion.tipo}}</small></p>
+          <p class="card-text"><small class="text-muted">{{educacion.fechas}}</small></p>
+        </li>
+        
+      </ul>
+    </div>
+</div>

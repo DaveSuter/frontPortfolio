@@ -1,0 +1,29 @@
+div{
+    background-color: #15233D;
+}
+
+li{
+    background-color: #15233D;
+    border-color: #D0CCAF;
+}
+
+.margin{
+    margin-bottom: 30px;
+}
+
+.blanco{
+    color: white;
+}
+
+.bg-progres{
+    background-color: #1d1c2c;
+}
+
+.color-progres{
+    color: #BD5C6E;
+    background-color: #8f4552;
+}
+
+#contenedor{
+    padding: 20px;
+}

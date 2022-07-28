@@ -1,0 +1,60 @@
+<input 
+    id="edit-nombre" 
+    oninput="tomarTexto(this.value)" 
+    type="text" style="display:none" 
+    class="form-control a-c" 
+    placeholder="{{persona.name}}" 
+    aria-label="Recipient's username with two button addons"
+>
+<input 
+    id="edit-apellido" 
+    oninput="tomarTexto(this.value)" 
+    type="text" style="display:none" 
+    class="form-control a-c" 
+    placeholder="{{persona.lastName}}" 
+    aria-label="Recipient's username with two button addons"
+>
+<input 
+    id="edit-titulo" 
+    oninput="tomarTexto(this.value)" 
+    type="text" style="display:none" 
+    class="form-control a-c" 
+    placeholder="{{persona.title}}" 
+    aria-label="Recipient's username with two button addons"
+>
+<input 
+    id="edit-residencia" 
+    oninput="tomarTexto(this.value)" 
+    type="text" style="display:none" 
+    class="form-control a-c" 
+    placeholder="{{persona.province}}" 
+    aria-label="Recipient's username with two button addons"
+>
+<input 
+    id="edit-acercade" 
+    oninput="tomarTexto(this.value)" 
+    type="text" style="display:none" 
+    class="form-control a-c" 
+    placeholder="{{persona.about}}" 
+    aria-label="Recipient's username with two button addons"
+>
+<div class="d-grid gap-2 col-2 mx-auto a-c">
+    <button 
+        class="btn btn-outline-info" 
+        type="button" 
+        onclick="aceptarCambios()" 
+        style="display:none" 
+        id="edit-acercade-btn-acept"
+    >
+    Aceptar
+    </button>
+    <button 
+        class="btn btn-outline-info" 
+        type="button" 
+        onclick="cancelarCambios()" 
+        style="display:none" 
+        id="edit-acercade-btn-cancel"
+    >
+    Cancelar
+    </button>
+</div>

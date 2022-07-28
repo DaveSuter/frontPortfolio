@@ -1,0 +1,38 @@
+<div class="card mb-3">
+    <div class="card-body">
+      <div class="hstack gap-3">
+        <div class="me-auto">
+          <h5 class="card-title">Experiencia</h5>
+        </div>
+        <div>
+          <!--BOTON PARA AGREGAR UNO NUEVO-->
+          <app-buttom-add></app-buttom-add>
+        </div>
+      </div>
+      <ul class="list-group list-group-flush">
+        <!--tiene un *ngFor para recorrer la lista-->
+        <li class="list-group-item" *ngFor="let experiencia of experienciaLista">
+          <div class="hstack gap-3">
+            <div class="me-auto">
+              <p class="card-text">{{experiencia.puesto}}</p>
+            </div>
+            <div>
+              <!--BOTON PARA EDITAR-->
+              <app-buttom-edit></app-buttom-edit>
+            </div>
+            <div>
+              <!--BOTON PARA BORRAR-->
+              <!--<app-buttom-del (click)="(deleteExp(item))"></app-buttom-del> -->
+              <app-buttom-del></app-buttom-del>
+            </div>
+          </div>
+          <p class="card-text"><small class="text-muted">{{experiencia.empresa}}</small></p>
+          <p class="card-text"><small class="text-muted">{{experiencia.fechas}}</small></p>
+          <p class="card-text"><small class="text-muted">{{experiencia.descripcion}}</small></p>
+          <!--
+          <app-experiencia-edit></app-experiencia-edit> -->
+        </li>
+      </ul>
+    </div>
+    
+</div>

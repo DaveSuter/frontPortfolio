@@ -1,0 +1,18 @@
+<div class="card mb-3 margen">
+    <img [src]="persona.banner" class="img-fluid banner" alt="Oficina en departamento de piso alto con ventana">
+    <img [src]="persona.avatar" class="rounded-circle avatar" alt="Foto de cara">
+    <div class="card-body" style="margin-top:60px;">
+      <div class="hstack gap-3">
+        <div class="me-auto">
+          <h4 class="card-title" id="text-nombre">{{persona.name}} {{persona.lastName}}</h4>
+        </div>
+        <div>
+          <app-buttom-edit onclick="cambiar_parrafo()"></app-buttom-edit>
+        </div>
+      </div>
+      <p class="card-text" id="text-titulo">{{persona.title}}</p>
+      <p class="card-text" id="text-residencia"><small class="text-muted">{{persona.province}}, {{persona.country}}</small></p>
+      <p class="card-text" id="text-acercade"><small class="text-muted">{{persona.about}}</small></p>
+      <app-header-edit></app-header-edit>
+    </div>
+</div>

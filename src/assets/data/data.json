@@ -1,0 +1,85 @@
+{
+	"header": {
+		"nombre": "David Suter",
+		"banner": "/assets/imagenes/banner.jpg",
+		"avatar": "/assets/imagenes/perfil04.jpeg",
+		"titulo": "Full Stack Developer Jr Java/Angular",
+		"residencia": "Buenos Aires, Argentina",
+		"acercade": "Decidí darle un giro a mi vida profesional comenzando a estudiar nuevamente en el rubro IT, en el cual quiero insertarme laboralmente, donde aplicar lo aprendido, comprendido en conocimientos iniciales, y aprender aún más en el mismo. También apoyando con mis capacidades creativas y resolutivas."
+	},
+	"experiencia": [{
+		"id": 1,
+		"puesto": "Trabajo 1",
+		"empresa": "inventada",
+		"fechas": "04/2018 - Actualidad",
+		"descripcion": "descripcion del puesto detalles detalles detalles blabla muy bien"
+	},
+	{
+		"id": 2,
+		"puesto": "Trabajo 2",
+		"empresa": "otra empresa",
+		"fechas": "06/2012 - 02/2018",
+		"descripcion": "descripcion del puesto detalles detalles detalles EXCELENNNTEEE!!!"
+	},
+	{
+		"id": 3,
+		"puesto": "Trabajo 3",
+		"empresa": "otra empresa",
+		"fechas": "06/2012 - 02/2018",
+		"descripcion": "descripcion del puesto detalles detalles detalles EXCELENNNTEEE!!!"
+	}],
+	"educacion": [{
+		"id": 1,
+		"titulo": "Tec Programación",
+		"institucion": "UNLZ",
+		"tipo": "universitario",
+		"fechas": "04/2020 - Actualidad"
+	},
+	{
+		"id": 2,
+		"titulo": "Tec en Informática",
+		"institucion": "Almafuerte",
+		"tipo": "secundario",
+		"fechas": "03/2003 - 12/2011"
+	}],
+	"skills": [{
+		"id": 1,
+		"skillname": "Java",
+		"percent": "85"
+	},
+	{
+		"id": 2,
+		"skillname": "Capacidad de análisis",
+		"percent": "75"
+	},
+	{
+		"id": 3,
+		"skillname": "Aprendisaje",
+		"percent": "65"
+	},
+	{
+		"id": 4,
+		"skillname": "SQL",
+		"percent": "50"
+	},
+	{
+		"id": 5,
+		"skillname": "Liderazgo",
+		"percent": "70"
+	},
+	{
+		"id": 6,
+		"skillname": "Inglés",
+		"percent": "55"
+	}],
+	"projects": [{
+		"id": 1,
+		"projectname": "Portfolio AP",
+		"details": "html css bootstrap js ts angular sql java springboot"
+	},
+	{
+		"id": 2,
+		"projectname": "Cinema Basilio",
+		"details": "html css bootstrap php"
+	}]
+}

@@ -9,7 +9,8 @@ export class persona{
     country: String;
     about: String;
 
-    constructor(name: String, lastName: String, banner: String, avatar: String, title: String, province: String, country: String, about: String){
+    constructor(name: String, lastName: String, banner: String, avatar: String, title: String, 
+        province: String, country: String, about: String){
         this.name = name;
         this.lastName = lastName;
         this.banner = banner;

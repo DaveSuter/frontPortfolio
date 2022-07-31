@@ -6,29 +6,30 @@
         </div>
         <div>
           <!--BOTON PARA AGREGAR UNO NUEVO-->
-          <app-buttom-add></app-buttom-add>
+          <app-buttom-add *ngIf="isLogged"></app-buttom-add>
         </div>
       </div>
       <ul class="list-group list-group-flush">
         <!--tiene un *ngFor para recorrer la lista-->
-        <li class="list-group-item" *ngFor="let experiencia of experienciaLista">
+        <li class="list-group-item" *ngFor="let Experiencia of experiencia">
           <div class="hstack gap-3">
             <div class="me-auto">
-              <p class="card-text">{{experiencia.puesto}}</p>
+              <p class="card-text">{{Experiencia.puesto}}</p>
             </div>
             <div>
               <!--BOTON PARA EDITAR-->
-              <app-buttom-edit></app-buttom-edit>
+              <app-buttom-edit *ngIf="isLogged"></app-buttom-edit>
             </div>
             <div>
               <!--BOTON PARA BORRAR-->
               <!--<app-buttom-del (click)="(deleteExp(item))"></app-buttom-del> -->
-              <app-buttom-del></app-buttom-del>
+              <app-buttom-del *ngIf="isLogged"></app-buttom-del>
             </div>
           </div>
-          <p class="card-text"><small class="text-muted">{{experiencia.empresa}}</small></p>
-          <p class="card-text"><small class="text-muted">{{experiencia.fechas}}</small></p>
-          <p class="card-text"><small class="text-muted">{{experiencia.descripcion}}</small></p>
+          <p class="card-text"><small class="text-muted">{{Experiencia.empresa}}</small></p>
+          <p class="card-text"><small class="text-muted">{{Experiencia.fechaInicio}}</small></p>
+          <p class="card-text"><small class="text-muted">{{Experiencia.fechaFinalizacion}}</small></p>
+          <p class="card-text"><small class="text-muted">{{Experiencia.descripcion}}</small></p>
           <!--
           <app-experiencia-edit></app-experiencia-edit> -->
         </li>
